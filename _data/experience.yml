@@ -1,0 +1,12 @@
+- name: employer
+  role: job
+  location: where the job was
+  date_start: when it started
+  date_end: when it ended
+  description: what was done at this job
+
+- name: employer
+  role: job
+  location: where the job was
+  date_start: when it started
+  date_end: when it ended

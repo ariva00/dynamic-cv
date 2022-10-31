@@ -6,9 +6,11 @@
 </head>
 <body>
   <div id="main">
+
     <div id="content">
     {{ content }}
     </div>
+
     <div id="education">
       Education
       <ul>
@@ -24,6 +26,24 @@
         {% endfor %}
       </ul>
     </div>
+
+    <div id="experience">
+      Experience
+      <ul>
+        {% for i in site.data.experience %}
+          <li>
+            <job-name>{{ i.name }}</job-name> 
+            <job-role>{{ i.role }}</job-role>
+            <job-location>{{ i.location }}</job-location>
+            <job-date>{{ i.date_start }}-{{ i.date_end }}</job-date>
+            {% if i.description %}
+              <job-description>{{ i.description }}</job-description>
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+
   </div>
 </body>
 </html>
