@@ -44,6 +44,25 @@
       </ul>
     </div>
 
+    <div id="languages">
+      Languages
+      <ul>
+        {% for i in site.data.languages %}
+          <li>
+            <lang-language>{{ i.language }}</lang-language> 
+            <lang-level>{{ i.level }}</lang-level>
+            {% if i.certificate %}
+              <lang-certificate>{{ i.certificate }}</lang-certificate>
+              <lang-date>{{ i.date_start }}</lang-date>
+            {% endif %}
+            {% if i.description %}
+              <lang-description>{{ i.description }}</lang-description>
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+
   </div>
 </body>
 </html>
