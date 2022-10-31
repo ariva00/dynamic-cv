@@ -1,0 +1,10 @@
+- name: school's name
+  grade: grade
+  date_start: year
+  date_end: another year
+  description: some info
+
+- name: second school's name
+  grade: different grade
+  date_start: new year
+  date_end: yet another year

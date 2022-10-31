@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=utf-8 />
+  <title>{{ page.title }}</title>
+</head>
+<body>
+  <div id="main">
+    <div id="content">
+    {{ content }}
+    </div>
+    <div id="education">
+      Education
+      <ul>
+        {% for i in site.data.education %}
+          <li>
+            <edu-name>{{ i.name }}</edu-name> 
+            <edu-grade>{{ i.grade }}</edu-grade>
+            <edu-date>{{ i.date_start }}-{{ i.date_end }}</edu-date>
+            {% if i.description %}
+              <edu-description>{{ i.description }}</edu-description>
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
