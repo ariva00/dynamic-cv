@@ -63,6 +63,21 @@
       </ul>
     </div>
 
+    <div id="certificates">
+      Certificates
+      <ul>
+        {% for i in site.data.certificates %}
+          <li>
+            <cert-certificate>{{ i.certificate }}</cert-certificate>
+            <cert-date>{{ i.date_start }}</cert-date>
+            {% if i.description %}
+              <cert-description>{{ i.description }}</cert-description>
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+
   </div>
 </body>
 </html>
