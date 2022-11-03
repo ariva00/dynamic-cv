@@ -1,14 +1,14 @@
-- language: english
+- name: english
   level: C1
   certificate: name of the certificate
   date: issued on 
   description: what it is like
 
-- language: german
+- name: german
   level: C1
   description: what it is about
 
-- language: italian
+- name: italian
   level: C1
   certificate: name of the certificate
   date: issued on 

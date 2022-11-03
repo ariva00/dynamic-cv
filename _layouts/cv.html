@@ -3,6 +3,7 @@
 <head>
   <meta charset=utf-8 />
   <title>{{ page.title }}</title>
+  <link href="media/{{ site.style }}.css" type="text/css" rel="stylesheet">
 </head>
 <body>
   <div id="main">
@@ -11,67 +12,68 @@
     {{ content }}
     </div>
 
-    <div id="education">
+    <div id="education" class="edu container">
       Education
-      <ul>
+      <ul class="edu list">
         {% for i in site.data.education %}
-          <li>
-            <edu-name>{{ i.name }}</edu-name> 
-            <edu-grade>{{ i.grade }}</edu-grade>
-            <edu-date>{{ i.date_start }}-{{ i.date_end }}</edu-date>
+          <li class="edu list-item">
+            <div class="edu name">{{ i.name }}</div> 
+            <div class="edu grade">{{ i.grade }}</div>
+            <div class="edu date">{{ i.date_start }}-{{ i.date_end }}</div>
             {% if i.description %}
-              <edu-description>{{ i.description }}</edu-description>
+              <div class="edu description">{{ i.description }}</div>
             {% endif %}
           </li>
         {% endfor %}
       </ul>
     </div>
 
-    <div id="experience">
+    <div id="experience" class="job container">
       Experience
-      <ul>
+      <ul class="job list">
         {% for i in site.data.experience %}
-          <li>
-            <job-name>{{ i.name }}</job-name> 
-            <job-role>{{ i.role }}</job-role>
-            <job-location>{{ i.location }}</job-location>
-            <job-date>{{ i.date_start }}-{{ i.date_end }}</job-date>
+          <li class="job list-item">
+            <div class="job name">{{ i.name }}</div> 
+            <div class="job role">{{ i.role }}</div>
+            <div class="job location">{{ i.location }}</div>
+            <div class="job date">{{ i.date_start }}-{{ i.date_end }}</div>
             {% if i.description %}
-              <job-description>{{ i.description }}</job-description>
+              <div class="job description">{{ i.description }}</div>
             {% endif %}
           </li>
         {% endfor %}
       </ul>
     </div>
 
-    <div id="languages">
+    <div id="languages" class="lang container">
       Languages
-      <ul>
+      <ul class="lang list">
         {% for i in site.data.languages %}
-          <li>
-            <lang-language>{{ i.language }}</lang-language> 
-            <lang-level>{{ i.level }}</lang-level>
+          <li class="lang list-item">
+            <div class="lang name">{{ i.name }}</div> 
+            <div class="lang level">{{ i.level }}</div>
             {% if i.certificate %}
-              <lang-certificate>{{ i.certificate }}</lang-certificate>
-              <lang-date>{{ i.date_start }}</lang-date>
+              <div class="lang certificate">{{ i.certificate }}</div>
+              <div class="lang date">{{ i.date_start }}</div>
             {% endif %}
             {% if i.description %}
-              <lang-description>{{ i.description }}</lang-description>
+              <div class="lang description">{{ i.description }}</div>
             {% endif %}
           </li>
         {% endfor %}
       </ul>
     </div>
 
-    <div id="certificates">
+    <div id="certificates" class="cert container">
       Certificates
-      <ul>
+      <ul class="cert list">
         {% for i in site.data.certificates %}
-          <li>
-            <cert-certificate>{{ i.certificate }}</cert-certificate>
-            <cert-date>{{ i.date_start }}</cert-date>
+          <li class="cert list-item">
+            <div class="cert name">{{ i.name }}</div>
+            <div class="cert issuer">{{ i.issuer }}</div>
+            <div class="cert date">{{ i.date }}</div>
             {% if i.description %}
-              <cert-description>{{ i.description }}</cert-description>
+              <div class="cert description">{{ i.description }}</div>
             {% endif %}
           </li>
         {% endfor %}
