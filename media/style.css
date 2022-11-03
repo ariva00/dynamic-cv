@@ -1,0 +1,21 @@
+.container {
+    border-radius: 0.5rem;
+    border-style: solid;
+    border-color: black;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.edu.grade {
+    text-decoration: underline;
+}
+
+.date {
+    font-style: italic;
+}
+
+.description {
+    padding-left: 2rem;
+}
