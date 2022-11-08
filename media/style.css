@@ -1,3 +1,5 @@
+/* main grid layout */
+
 .grid-container {
     display: grid;
     grid-template-areas:    'pic bio bio'
@@ -32,6 +34,135 @@
     grid-area: skills;
 }
 
+/* items layouts */ 
+
+.edu.list-item,  .job.list-item, .lang.list-item, 
+.cert.list-item, .skills.list-item {
+    display: grid;
+}
+
+/* education */
+
+.edu.list-item {
+    grid-template-areas: 
+        'name date' 
+        'grade grade' 
+        'description description'
+        'mark mark';
+}
+
+.edu.name {
+    grid-area: name;
+}
+
+.edu.grade {
+    grid-area: grade;
+}
+
+.edu.date {
+    grid-area: date;
+}
+
+.edu.description {
+    grid-area: description;
+}
+
+.edu.mark {
+    grid-area: mark;
+}
+
+/* experience */
+
+.job.list-item {
+    grid-template-areas: 
+        'name date' 
+        'role role'
+        'description description'
+        'location location'
+}
+
+.job.name {
+    grid-area: name;
+}
+
+.job.location {
+    grid-area: location;
+}
+
+.job.role {
+    grid-area: role;
+}
+
+.job.date {
+    grid-area: date;
+}
+
+.job.description {
+    grid-area: description;
+}
+
+/* Languages */
+
+.lang.list-item {
+    grid-template-areas: 
+        'name date'
+        'certificate certificate'
+        'description description'
+        'level level'
+}
+
+.lang.name {
+    grid-area: name;
+}
+
+.lang.certificate {
+    grid-area: certificate;
+}
+
+.lang.level {
+    grid-area: level;
+}
+
+.lang.date {
+    grid-area: date;
+}
+
+.lang.description {
+    grid-area: description;
+}
+
+/* Certificates */
+
+.cert.list-item {
+    grid-template-areas: 
+        'name date'
+        'issuer issuer'
+        'description description'
+}
+
+.cert.name {
+    grid-area: name;
+}
+
+.cert.certificate {
+    grid-area: certificate;
+}
+
+.cert.level {
+    grid-area: level;
+}
+
+.cert.date {
+    grid-area: date;
+}
+
+.cert.description {
+    grid-area: description;
+}
+
+
+/* style */
+
 .container {
     padding: 0.3rem;
 }
@@ -57,6 +188,8 @@
 
 .date {
     font-style: italic;
+    text-align: right;
+    padding-right: 2rem;
 }
 
 .description {

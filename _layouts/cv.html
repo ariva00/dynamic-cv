@@ -14,84 +14,77 @@
 
     <div id="education" class="edu container">
       <span class="edu sec-title">Education</span>
-      <ul class="edu list">
-        {% for i in site.data.education %}
-          <li class="edu list-item">
-            <div class="edu name">{{ i.name }}</div> 
-            <div class="edu grade">{{ i.grade }}</div>
-            <div class="edu date">{{ i.date_start }}-{{ i.date_end }}</div>
-            {% if i.description %}
-              <div class="edu description">{{ i.description }}</div>
-            {% endif %}
-          </li>
-        {% endfor %}
-      </ul>
+      {% for i in site.data.education %}
+        <div class="edu list-item">
+          <div class="edu name">{{ i.name }}</div> 
+          <div class="edu grade">{{ i.grade }}</div>
+          {% if i.mark %}
+            <div class="edu mark">{{ i.mark }}</div>
+          {% endif %}
+          <div class="edu date">{{ i.date_start }}-{{ i.date_end }}</div>
+          {% if i.description %}
+            <div class="edu description">{{ i.description }}</div>
+          {% endif %}
+        </div>
+      {% endfor %}
     </div>
 
     <div id="experience" class="job container">
       <span class="job sec-title">Experience</span>
-      <ul class="job list">
-        {% for i in site.data.experience %}
-          <li class="job list-item">
-            <div class="job name">{{ i.name }}</div> 
-            <div class="job role">{{ i.role }}</div>
-            <div class="job location">{{ i.location }}</div>
-            <div class="job date">{{ i.date_start }}-{{ i.date_end }}</div>
-            {% if i.description %}
-              <div class="job description">{{ i.description }}</div>
-            {% endif %}
-          </li>
-        {% endfor %}
-      </ul>
+      {% for i in site.data.experience %}
+        <div class="job list-item">
+          <div class="job name">{{ i.name }}</div> 
+          <div class="job role">{{ i.role }}</div>
+          <div class="job location">{{ i.location }}</div>
+          <div class="job date">{{ i.date_start }}-{{ i.date_end }}</div>
+          {% if i.description %}
+            <div class="job description">{{ i.description }}</div>
+          {% endif %}
+        </div>
+      {% endfor %}
     </div>
 
     <div id="languages" class="lang container">
       <span class="lang sec-title">Languages</span>
-      <ul class="lang list">
-        {% for i in site.data.languages %}
-          <li class="lang list-item">
-            <div class="lang name">{{ i.name }}</div> 
-            <div class="lang level">{{ i.level }}</div>
-            {% if i.certificate %}
-              <div class="lang certificate">{{ i.certificate }}</div>
-              <div class="lang date">{{ i.date_start }}</div>
-            {% endif %}
-            {% if i.description %}
-              <div class="lang description">{{ i.description }}</div>
-            {% endif %}
-          </li>
-        {% endfor %}
-      </ul>
+      {% for i in site.data.languages %}
+        <div class="lang list-item">
+          <div class="lang name">{{ i.name }}</div> 
+          <div class="lang level">{{ i.level }}</div>
+          {% if i.certificate %}
+            <div class="lang certificate">{{ i.certificate }}</div>
+            <div class="lang date">{{ i.date }}</div>
+          {% endif %}
+          {% if i.description %}
+            <div class="lang description">{{ i.description }}</div>
+          {% endif %}
+        </div>
+      {% endfor %}
     </div>
 
     <div id="certificates" class="cert container">
       <span class="cert sec-title">Certificates</span>
-      <ul class="cert list">
-        {% for i in site.data.certificates %}
-          <li class="cert list-item">
-            <div class="cert name">{{ i.name }}</div>
-            <div class="cert issuer">{{ i.issuer }}</div>
-            <div class="cert date">{{ i.date }}</div>
-            {% if i.description %}
-              <div class="cert description">{{ i.description }}</div>
-            {% endif %}
-          </li>
-        {% endfor %}
-      </ul>
+      {% for i in site.data.certificates %}
+        <div class="cert list-item">
+          <div class="cert name">{{ i.name }}</div>
+          <div class="cert issuer">{{ i.issuer }}</div>
+          <div class="cert date">{{ i.date }}</div>
+          {% if i.description %}
+            <div class="cert description">{{ i.description }}</div>
+          {% endif %}
+        </div>
+      {% endfor %}
     </div>
 
     <div id="skills" class="skills container">
       <span class="skills sec-title">Skills</span>
-      <ul class="skills list">
-        {% for i in site.data.skills %}
-          <li class="skills list-item">
-            <div class="skills name">{{ i.name }}</div>
-            {% for e in i.list %}
-              <div class="skills element">{{ e }}</div>
-            {% endfor %}
-          </li>
-        {% endfor %}
-      </ul>
+      {% for i in site.data.skills %}
+        <div class="skills list-item">
+          <div class="skills name">{{ i.name }}</div>
+          {% for e in i.list %}
+            <div class="skills element">{{ e }}</div>
+          {% endfor %}
+        </div>
+      {% endfor %}
     </div>
 
   </div>

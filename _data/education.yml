@@ -1,10 +1,12 @@
 - name: school's name
   grade: grade
+  mark: 100
   date_start: year
   date_end: another year
   description: some info
 
 - name: second school's name
   grade: different grade
+  mark: 10
   date_start: new year
   date_end: yet another year
