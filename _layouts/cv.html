@@ -6,9 +6,9 @@
   <link href="media/{{ site.style }}.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-  <div id="main">
+  <div id="main" class="grid-container">
 
-    <div id="content">
+    <div id="content" class="bio container">
     {{ content }}
     </div>
 
@@ -75,6 +75,20 @@
             {% if i.description %}
               <div class="cert description">{{ i.description }}</div>
             {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div id="skills" class="skills container">
+      <span class="skills sec-title">Skills</span>
+      <ul class="skills list">
+        {% for i in site.data.skills %}
+          <li class="skills list-item">
+            <div class="skills name">{{ i.name }}</div>
+            {% for e in i.list %}
+              <div class="skills element">{{ e }}</div>
+            {% endfor %}
           </li>
         {% endfor %}
       </ul>

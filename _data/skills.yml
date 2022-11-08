@@ -1,0 +1,9 @@
+- name: programs
+  list: 
+  - git
+  - jekyll
+- name: languages
+  list:
+  - HTML
+  - CSS
+  - yes i know

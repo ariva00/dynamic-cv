@@ -1,3 +1,37 @@
+.grid-container {
+    display: grid;
+    grid-template-areas:    'pic bio bio'
+                            'skills edu edu'
+                            'skills job job'
+                            'skills lang lang'
+                            'skills cert cert'
+                            'footer footer footer'
+}
+
+.bio.container {
+    grid-area: bio;
+}
+
+.edu.container {
+    grid-area: edu;
+}
+
+.job.container {
+    grid-area: job;
+}
+
+.lang.container {
+    grid-area: lang;
+}
+
+.cert.container {
+    grid-area: cert;
+}
+
+.skills.container {
+    grid-area: skills;
+}
+
 .container {
     padding: 0.3rem;
 }
