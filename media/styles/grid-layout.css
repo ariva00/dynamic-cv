@@ -2,7 +2,9 @@
 
 .grid-container {
     display: grid;
-    grid-template-areas:    'pic bio bio'
+    grid-template-areas:    'pic title title'
+                            'pic bio bio'
+                            'uris bio bio'
                             'skills edu edu'
                             'skills job job'
                             'skills lang lang'
@@ -38,11 +40,29 @@
     grid-area: pic;
 }
 
+.uris.container {
+    grid-area: uris;
+}
+
 /* items layouts */ 
 
 .edu.list-item,  .job.list-item, .lang.list-item, 
-.cert.list-item, .skills.list-item {
+.cert.list-item {
     display: grid;
+}
+
+.skills.list-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.uris.container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
 }
 
 /* education */
@@ -163,4 +183,3 @@
 .cert.description {
     grid-area: description;
 }
-

@@ -80,13 +80,20 @@
     </div>
 
     <div id="skills" class="skills container">
-      <div class="skills sec-title">Skills</div>
       {% for i in site.data.skills %}
         <div class="skills list-item">
           <div class="skills name">{{ i.name }}</div>
           {% for e in i.list %}
             <div class="skills element">{{ e }}</div>
           {% endfor %}
+        </div>
+      {% endfor %}
+    </div>
+
+    <div id="uris" class="uris container">
+      {% for i in site.data.uris %}
+        <div class="uris list-item">
+          <a href={{ i.uri }}>{{ i.name }}</a>
         </div>
       {% endfor %}
     </div>

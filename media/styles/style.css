@@ -68,7 +68,7 @@ body {
     padding: 2rem;
 }
 
-.skills.container {
+.skills.container, .uris.container {
     background-color: #c0c6c9;
     padding: 2rem;
 }
@@ -80,4 +80,39 @@ body {
 
 .edu.container {
     padding-top: 2rem;
+}
+
+.skills.element {
+    margin-left: 1rem;
+}
+
+.uris.list-item {
+    margin-bottom: 0px;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+/* uris */
+
+.uris.list-item a{
+    text-decoration: none;
+}
+
+/* unvisited link */
+.uris.list-item a:link {
+    color: black;
+}
+
+/* visited link */
+.uris.list-item a:visited {
+    color: black;
+}
+
+/* mouse over link */
+.uris.list-item a:hover {
+    color: blue;
+}
+
+/* selected link */
+.uris.list-item a:active {
+    color: blue;
 }

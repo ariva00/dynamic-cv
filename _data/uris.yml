@@ -1,0 +1,8 @@
+- name: link
+  uri: https://github.com/ariva00
+
+- name: tel
+  uri: tel:01189998819991197253
+
+- name: email
+  uri: mailto:ariva00.it@gmail.com
