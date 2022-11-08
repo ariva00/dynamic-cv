@@ -1,9 +1,13 @@
 @import "grid-layout.css";
 
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+
 /* style */
 
 body {
     margin: 0px;
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 
 .container {
@@ -11,32 +15,40 @@ body {
 }
 
 .sec-title {
-    font-size: larger;
+    font-weight: bold;
+    font-size: x-large;
     text-decoration: underline;
+    margin-bottom: 0.5rem;
 }
 
 .list-item {
-    border-left-style: dotted;
     padding-left: 0.5rem;
     margin-bottom: 1rem;
 }
 
 .name {
     font-weight: bold;
+    font-size: larger;
 }
 
 .date {
     font-style: italic;
     text-align: right;
     padding-right: 2rem;
+    color: #707070;
 }
 
 .description {
-    padding-left: 2rem;
+    border-left-style: solid;
+    border-left-width: 0.1rem;
+    border-left-color: #707070;
+    padding-left: 0.3rem;
+    margin-left: 0.8rem;
 }
 
-.edu.grade {
-    text-decoration: underline;
+.edu.grade, .job.role, .lang.certificate, .cert.issuer {
+    color: #1d1d1d;
+    font-family: 'IBM Plex Mono', monospace;
 }
 
 .pic.image {
