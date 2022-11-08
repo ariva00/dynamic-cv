@@ -20,6 +20,7 @@
       <img src="media/images/{{ page.cv-pic }}" class="pic image">
     </div>
 
+    {% if site.data.education[0] %}
     <div id="education" class="edu container">
       <div class="edu sec-title">Education</div>
       {% for i in site.data.education %}
@@ -36,7 +37,9 @@
         </div>
       {% endfor %}
     </div>
+    {% endif %}
 
+    {% if site.data.experience[0] %}
     <div id="experience" class="job container">
       <div class="job sec-title">Experience</div>
       {% for i in site.data.experience %}
@@ -51,7 +54,9 @@
         </div>
       {% endfor %}
     </div>
+    {% endif %}
 
+    {% if site.data.languages[0] %}
     <div id="languages" class="lang container">
       <div class="lang sec-title">Languages</div>
       {% for i in site.data.languages %}
@@ -68,7 +73,9 @@
         </div>
       {% endfor %}
     </div>
+    {% endif %}
 
+    {% if site.data.certificates[0] %}
     <div id="certificates" class="cert container">
       <div class="cert sec-title">Certificates</div>
       {% for i in site.data.certificates %}
@@ -82,7 +89,9 @@
         </div>
       {% endfor %}
     </div>
+    {% endif %}
 
+    {% if site.data.skills[0] %}
     <div id="skills" class="skills container">
       {% for i in site.data.skills %}
         <div class="skills list-item">
@@ -93,7 +102,9 @@
         </div>
       {% endfor %}
     </div>
+    {% endif %}
 
+    {% if site.data.uris[0] %}
     <div id="uris" class="uris container">
       {% for i in site.data.uris %}
         <div class="uris list-item">
@@ -101,6 +112,7 @@
         </div>
       {% endfor %}
     </div>
+    {% endif %}
 
   </div>
 </body>
