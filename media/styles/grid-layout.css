@@ -9,7 +9,12 @@
                             'skills job job'
                             'skills lang lang'
                             'skills cert cert'
-                            'footer footer footer'
+                            'footer footer footer';
+    grid-template-columns: 33% auto auto;
+}
+
+.title.container {
+    grid-area: title;
 }
 
 .bio.container {

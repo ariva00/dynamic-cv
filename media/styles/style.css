@@ -63,7 +63,7 @@ body {
     padding: 1rem;
 }
 
-.bio.container {
+.bio.container, .title.container {
     background-color: #d8dde4d0;
     padding: 2rem;
 }
@@ -115,4 +115,10 @@ body {
 /* selected link */
 .uris.list-item a:active {
     color: blue;
+}
+
+.title.container {
+    font-weight: bold;
+    font-size: xx-large;
+    text-align: right;
 }
