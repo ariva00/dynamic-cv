@@ -12,6 +12,10 @@
     {{ content }}
     </div>
 
+    <div id="picture" class="pic container">
+      <img src="media/images/{{ page.cv-pic }}" class="pic image">
+    </div>
+
     <div id="education" class="edu container">
       <span class="edu sec-title">Education</span>
       {% for i in site.data.education %}

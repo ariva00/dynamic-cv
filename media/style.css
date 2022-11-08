@@ -34,6 +34,10 @@
     grid-area: skills;
 }
 
+.pic.container {
+    grid-area: pic;
+}
+
 /* items layouts */ 
 
 .edu.list-item,  .job.list-item, .lang.list-item, 
@@ -194,4 +198,9 @@
 
 .description {
     padding-left: 2rem;
+}
+
+.pic.image {
+    margin: auto;
+    max-width: 200px;
 }
