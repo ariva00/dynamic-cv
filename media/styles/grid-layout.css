@@ -80,7 +80,7 @@
 .job.list-item {
     grid-template-areas: 
         'name date' 
-        'role role'
+        'employer employer'
         'description description'
         'location location'
 }
@@ -93,8 +93,8 @@
     grid-area: location;
 }
 
-.job.role {
-    grid-area: role;
+.job.employer {
+    grid-area: employer;
 }
 
 .job.date {

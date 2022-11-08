@@ -21,7 +21,7 @@
       {% for i in site.data.education %}
         <div class="edu list-item">
           <div class="edu name">{{ i.name }}</div> 
-          <div class="edu grade">{{ i.grade }}</div>
+          <div class="edu issuer">{{ i.issuer }}</div>
           {% if i.mark %}
             <div class="edu mark">{{ i.mark }}</div>
           {% endif %}
@@ -38,7 +38,7 @@
       {% for i in site.data.experience %}
         <div class="job list-item">
           <div class="job name">{{ i.name }}</div> 
-          <div class="job role">{{ i.role }}</div>
+          <div class="job employer">{{ i.employer }}</div>
           <div class="job location">{{ i.location }}</div>
           <div class="job date">{{ i.date_start }}-{{ i.date_end }}</div>
           {% if i.description %}

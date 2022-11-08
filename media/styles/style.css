@@ -46,7 +46,7 @@ body {
     margin-left: 0.8rem;
 }
 
-.edu.grade, .job.role, .lang.certificate, .cert.issuer {
+.edu.issuer, .job.employer, .lang.certificate, .cert.issuer {
     color: #1d1d1d;
     font-family: 'IBM Plex Mono', monospace;
 }
