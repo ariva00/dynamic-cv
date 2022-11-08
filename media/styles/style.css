@@ -95,6 +95,7 @@ body {
 
 .uris.list-item a{
     text-decoration: none;
+    font-size: smaller;
 }
 
 /* unvisited link */
@@ -120,5 +121,5 @@ body {
 .title.container {
     font-weight: bold;
     font-size: xx-large;
-    text-align: right;
+    text-align: left;
 }
