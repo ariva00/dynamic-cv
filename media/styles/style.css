@@ -58,8 +58,11 @@ body {
 }
 
 .pic.container {
+    display: flex;
     background-color: rgb(180, 221, 255);
     text-align: center;
+    flex-direction: column;
+    justify-content: center;
     padding: 1rem;
 }
 
