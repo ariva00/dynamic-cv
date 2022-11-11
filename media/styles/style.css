@@ -101,6 +101,17 @@ body {
     font-size: smaller;
 }
 
+@media only screen and (orientation: portrait) {
+    .uris.list-item a {
+        font-size: large;
+    }
+
+    .uris.list-item {
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+}
+
 /* unvisited link */
 .uris.list-item a:link {
     color: black;

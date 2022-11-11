@@ -12,6 +12,21 @@
                             'footer footer footer';
     grid-template-columns: 33% auto auto;
 }
+@media only screen and (orientation: portrait) {
+    .grid-container {
+        grid-template-areas:'title'
+                            'pic'
+                            'bio'
+                            'uris'
+                            'edu'
+                            'job'
+                            'lang'
+                            'cert'
+                            'skills'
+                            'footer';
+        grid-template-columns: auto;
+    }
+}
 
 .title.container {
     grid-area: title;
@@ -66,7 +81,6 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    align-items: left;
     justify-content: center;
 }
 
